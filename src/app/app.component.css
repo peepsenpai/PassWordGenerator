@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    /* width: 100vw;
+    overflow: hidden; */
+}
+input{
+    font-size: 16px;
+    padding: 4px;
+}
+.errormsgs{
+    text-align: center;
+}
+.errormsgs p{
+    min-height: 20px;
+    font-weight: bold;
+    color:  red;
+    letter-spacing: 1px;
+    margin-bottom:3px;
+}
+.output-value input{
+    /* margin-left: 5px; */
+    pointer-events: none;
+    width: 100%;
+}
+.user-checkbox input{
+    width: 18px;
+    height: 18px;
+    float: right;
+}
+.container{
+    background-color: rgb(15, 45, 49);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow:14px 15px 13px -3px rgb(40 58 140);
+    color: white;
+}
+.heading{
+    margin-bottom: 10px;
+}
+.generate-btn{
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-size: large;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.generate-btn:hover{
+     background-color: rgb(59, 72, 73);
+    color: white;
+}
+.button{
+    text-align: center;
+}
+.container > div{
+    margin: 3px;
+}
+.output-value label{
+    margin-bottom: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.output-value{
+    position: relative;
+}
+.copy{
+    text-transform: uppercase;
+    position: absolute;
+    right: 2%;
+    top: 46%;
+    border: none;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.copy:hover{
+    background-color: rgb(15, 45, 49);
+    color: white;
+}
+.copied{
+    position: fixed;
+    top: 5vh;
+    text-shadow: 1px 1px 7px #b0661d;
+    font-size: 21px;
+}
